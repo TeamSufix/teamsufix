@@ -1,4 +1,5 @@
-import { Code2, Building2, Landmark, Hammer, Briefcase } from "lucide-react";
+import { Code2, Building2, Hammer, Briefcase } from "lucide-react";
+// import { Code2, Building2, Landmark, Hammer, Briefcase } from "lucide-react";
 
 import FloatingCard from "../FloatingCard";
 
@@ -21,11 +22,17 @@ export default function HeroVisual() {
           icon={Building2}
         />
 
-        <FloatingCard
+        {/* <FloatingCard
           title="Architecture"
           subtitle="BIM • Interior"
           icon={Landmark}
-        />
+        /> */}
+
+        <FloatingCard
+            title="Consulting"
+            subtitle="Business • Technology"
+            icon={Briefcase}
+          />
 
         <FloatingCard
           title="Construction"
@@ -33,13 +40,13 @@ export default function HeroVisual() {
           icon={Hammer}
         />
 
-        <div className="md:col-span-2">
+        {/* <div className="md:col-span-2">
           <FloatingCard
             title="Consulting"
             subtitle="Business • Technology"
             icon={Briefcase}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

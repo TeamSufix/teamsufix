@@ -17,9 +17,9 @@ export default function Logo({ size = 52 }: LogoProps) {
       />
 
       <div>
-        <h1 className="font-heading text-xl font-bold">TeamSufix</h1>
+        <h1 className="font-heading text-xl font-bold">TeamSufix.</h1>
 
-        <p className="text-xs text-gray-500">Consulting & Engineering</p>
+        <p className="text-xs text-gray-500">System Consulting & Engineering</p>
       </div>
     </Link>
   );

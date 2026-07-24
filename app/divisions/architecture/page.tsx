@@ -4,10 +4,11 @@ import DivisionHero from "@/components/divisions/digital/DivisionHero";
 import DivisionIndustries from "@/components/divisions/digital/DivisionIndustries";
 import DivisionOverview from "@/components/divisions/digital/DivisionOverview";
 import DivisionServices from "@/components/divisions/digital/DivisionServices";
+
 import { divisionData } from "@/lib/divisions";
 
-export default function DigitalPage() {
-  const division = divisionData.digital;
+export default function ArchitecturePage() {
+  const division = divisionData.architecture;
 
   return (
     <>
@@ -31,8 +32,8 @@ export default function DigitalPage() {
       <DivisionExpertise expertise={division.expertise} />
 
       <DivisionCTA
-        title="Have a digital challenge to solve?"
-        description="Let's discuss your goals and explore how technology can help your organization operate smarter, serve better and grow with confidence."
+        title="Have a space or design idea in mind?"
+        description="Let's transform your vision into a thoughtful, functional and purposeful design."
       />
     </>
   );

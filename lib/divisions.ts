@@ -79,7 +79,7 @@ export const divisionData: Record<string, DivisionData> = {
     shortTitle: "Engineering",
     icon: Building2,
 
-    tagline: "Engineering solutions built for real-world performance.",
+    tagline: "Engineering solutions built for real world performance.",
 
     description:
       "We provide technical engineering expertise that supports safe, efficient and sustainable projects from concept through delivery.",

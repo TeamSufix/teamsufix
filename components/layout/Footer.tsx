@@ -141,7 +141,7 @@ export default function Footer() {
           "
         >
           <div className="max-w-xl">
-            <Logo />  
+            <Logo />
 
             <p
               className="
@@ -492,19 +492,16 @@ export default function Footer() {
             gap-y-3
             "
           >
-            <Link
-              href="/privacy-policy"
-              className="transition hover:text-green-300"
-            >
+            <Link href="/privacy-policy" className="hover:text-green-400">
               Privacy Policy
             </Link>
 
-            <Link href="/terms" className="transition hover:text-green-300">
+            <Link href="/terms" className="hover:text-green-400">
               Terms & Conditions
             </Link>
 
-            <Link href="/sitemap" className="transition hover:text-green-300">
-              Sitemap
+            <Link href="/cookie-policy" className="hover:text-green-400">
+              Cookie Policy
             </Link>
           </div>
         </div>

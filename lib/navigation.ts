@@ -13,6 +13,24 @@ export const navigation: NavigationItem[] = [
   {
     title: "About",
     href: "/about",
+    children: [
+      {
+        title: "About TeamSufix",
+        href: "/about",
+      },
+      {
+        title: "Projects",
+        href: "/projects",
+      },
+      {
+        title: "Why TeamSufix",
+        href: "/why-teamsufix",
+      },
+      {
+        title: "Process",
+        href: "/process",
+      },
+    ],
   },
   {
     title: "Business Divisions",
@@ -50,8 +68,8 @@ export const navigation: NavigationItem[] = [
     href: "/services",
   },
   {
-    title: "Projects",
-    href: "/projects",
+    title: "Industries",
+    href: "/industries",
   },
   {
     title: "Contact",

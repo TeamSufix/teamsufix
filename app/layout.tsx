@@ -8,6 +8,8 @@ import Footer from "@/components/layout/Footer";
 import ScrollToTop from "@/components/layout/ScrollToTop";
 import PageWrapper from "@/components/layout/PageWrapper";
 
+import OrganizationSchema from "@/components/seo/OrganizationSchema";
+
 const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-heading",
@@ -21,9 +23,66 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "TeamSufix | Consulting & Engineering",
+  metadataBase: new URL("https://teamsufix.com"),
+
+  title: {
+    default: "TeamSufix | Consulting & Engineering",
+    template: "%s | TeamSufix",
+  },
+
   description:
     "TeamSufix.System Consulting & Engineering delivers innovative technology, engineering, architecture, construction and consulting solutions across Africa.",
+
+  keywords: [
+    "TeamSufix",
+    "TeamSufix System",
+    "Consulting and Engineering",
+    "Software Development Ghana",
+    "Engineering Ghana",
+    "Architecture Ghana",
+    "Construction Ghana",
+    "Digital Transformation",
+    "Technology Consulting",
+  ],
+
+  authors: [
+    {
+      name: "TeamSufix.System Consulting & Engineering",
+    },
+  ],
+
+  creator: "TeamSufix.System Consulting & Engineering",
+
+  openGraph: {
+    type: "website",
+    locale: "en_GH",
+    url: "https://teamsufix.com",
+    siteName: "TeamSufix",
+    title: "TeamSufix | Consulting & Engineering",
+    description:
+      "Integrated technology, engineering, architecture, construction and consulting solutions.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "TeamSufix.System Consulting & Engineering",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "TeamSufix | Consulting & Engineering",
+    description:
+      "Integrated technology, engineering, architecture, construction and consulting solutions.",
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -43,6 +102,8 @@ export default function RootLayout({
           antialiased
         `}
       >
+        <OrganizationSchema />
+
         <Navbar />
 
         <main>

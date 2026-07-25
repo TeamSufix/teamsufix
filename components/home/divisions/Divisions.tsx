@@ -7,13 +7,12 @@ export default function Divisions() {
   return (
     <section
       className="
-        relative
-        overflow-hidden
-        bg-white
-        py-20
-        sm:py-24
-        lg:py-32
-      "
+          relative
+          bg-white
+          py-20
+          sm:py-24
+          lg:py-32
+        "
     >
       <div className="pointer-events-none absolute left-0 top-40 h-96 w-96 rounded-full bg-green-200/30 blur-[130px]" />
 

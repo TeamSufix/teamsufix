@@ -11,7 +11,7 @@ import FinalCTA from "@/components/home/cta/FinalCTA";
 
 export default function HomePage() {
   return (
-    <main className="overflow-hidden">
+    <main className="w-full overflow-x-hidden">
       <Hero />
 
       <HeroStats />

@@ -9,41 +9,46 @@ interface Props {
 
 export default function DivisionTabs({ active, setActive }: Props) {
   return (
-    <div className="flex flex-wrap justify-center gap-4">
+    <div className="grid w-full grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-center sm:gap-4">
       {divisions.map((division, index) => {
         const Icon = division.icon;
 
         return (
           <button
             key={division.title}
+            type="button"
             onClick={() => setActive(index)}
             className={`
-            group
-            flex
-            items-center
-            gap-3
-            rounded-2xl
-            border
-            px-6
-            py-4
-            h-6
-            w-45
-            transition-all
-            duration-300
+              flex
+              min-h-14
+              w-full
+              min-w-0
+              items-center
+              justify-center
+              gap-2
+              rounded-2xl
+              border
+              px-2
+              py-3
+              transition-all
+              duration-300
+              sm:w-auto
+              sm:min-w-[140px]
+              sm:px-6
+              sm:py-4
 
-            ${
-              active === index
-                ? "border-green-600 bg-gradient-to-r from-green-700 to-green-500 text-white shadow-xl"
-                : "border-green-100 bg-white hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
-            }
+              ${
+                active === index
+                  ? "border-green-600 bg-gradient-to-r from-green-700 to-green-500 text-white shadow-xl"
+                  : "border-green-100 bg-white text-slate-700 hover:-translate-y-1 hover:border-green-400 hover:shadow-lg"
+              }
             `}
           >
-            <Icon
-              size={20}
-              className={active === index ? "text-white" : "text-green-700"}
-            />
+            <Icon size={18} className="shrink-0" />
 
-            <span className="font-semibold">{division.short}</span>
+            <span className="truncate text-xs font-semibold sm:text-base">
+              {division.short}
+            </span>
           </button>
         );
       })}

@@ -26,7 +26,7 @@ export default function DivisionImage({ division }: any) {
       >
         {/* Image */}
 
-        <div className="relative h-[520px]">
+        <div className="relative h-[320px] sm:h-[460px] lg:h-[520px]">
           <Image
             src={division.image}
             alt={division.title}
@@ -75,20 +75,7 @@ export default function DivisionImage({ division }: any) {
 
         {/* Bottom Card */}
 
-        <div
-          className="
-          absolute
-          bottom-8
-          left-8
-          right-8
-          rounded-3xl
-          border
-          border-white/20
-          bg-white/15
-          p-6
-          backdrop-blur-xl
-          "
-        >
+        <div className="absolute bottom-4 left-4 right-4 rounded-3xl border border-white/20 bg-white/15 p-4 backdrop-blur-xl sm:bottom-8 sm:left-8 sm:right-8 sm:p-6">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-white/80">Integrated Solutions</p>
@@ -98,19 +85,7 @@ export default function DivisionImage({ division }: any) {
               </h3>
             </div>
 
-            <div
-              className="
-              flex
-              h-14
-              w-14
-              items-center
-              justify-center
-              rounded-2xl
-              bg-white
-              text-green-700
-              shadow-xl
-              "
-            >
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-green-700 shadow-xl sm:h-14 sm:w-14">
               <ArrowUpRight size={22} />
             </div>
           </div>
